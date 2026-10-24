@@ -36,6 +36,7 @@ Acceptance criteria:
 - Background motion remains subtle and non-distracting
 - Cards and components have polished spacing and depth
 - The interface feels visually consistent across modules
+- The dashboard uses a compact 80% visual scale with more distinct accent colors
 
 ---
 
@@ -48,6 +49,7 @@ Acceptance criteria:
 - User can create a custom life area with name, score, and goal
 - User can edit or remove an existing area
 - Area updates are reflected immediately in the dashboard
+- Selecting a life area opens a detail view with an edit option
 
 ### User story 2.2
 As a user, I want each life area to include a goal and progress indicator so that I can track how close I am to meaningful improvement.
@@ -68,6 +70,8 @@ Acceptance criteria:
 - User can mark a habit as complete or incomplete
 - Habit completion updates the weekly summary
 - Completed habits are visually differentiated
+- Selecting a habit opens a 13-week date grid where individual days can be checked or unchecked
+- Habit name and category can be edited from its detail sheet
 
 ### User story 3.2
 As a user, I want to see my habit streaks and completion ratios so that I can stay motivated without feeling judged.
@@ -96,6 +100,7 @@ Acceptance criteria:
 - Each goal has a title, category, due date, and status
 - User can create, update, and delete goals
 - Goal progress is visible in a clear progress view
+- Selecting a goal opens a detail view with an edit option
 
 ### User story 4.2
 As a user, I want to prioritize goals so that my effort focuses on what matters most right now.
@@ -124,6 +129,7 @@ Acceptance criteria:
 - Entries are stored chronologically
 - User can scroll through previous reflections
 - Past entries can be searched or filtered later
+- User can delete an individual journal entry
 
 ---
 
@@ -144,6 +150,7 @@ Acceptance criteria:
 - Planner item list is easy to scan
 - User can add tasks and mark their urgency
 - Weekly focus remains editable
+- The planner includes a broader set of weekly priorities and supports adding more items
 
 ---
 

@@ -119,6 +119,7 @@ function normalizeHabits(habits) {
 
 function loadState() {
   const fallback = cloneDefaultState();
+  fallback.habits = normalizeHabits(fallback.habits);
 
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -475,7 +476,7 @@ function saveDetail(event) {
     return;
   }
 
-  const values = Object.fromEntries(new FormData(event.currentTarget).entries());
+  const values = Object.fromEntries(new FormData(event.target).entries());
   if (activeDetail.type === 'area') {
     Object.assign(item, {
       name: values.name.trim(),
@@ -713,9 +714,16 @@ document.getElementById('addPlannerItemBtn').addEventListener('click', () => {
   }
 
   const priority = prompt('Priority: high, medium, or low', 'medium');
-  const normalizedPriority = ['high', 'medium', 'low'].includes(priority?.trim().toLowerCase())
-    ? priority.trim().toLowerCase()
-    : 'medium';
+  if (priority === null) {
+    return;
+  }
+
+  const normalizedPriority = priority.trim().toLowerCase();
+  if (!['high', 'medium', 'low'].includes(normalizedPriority)) {
+    alert('Choose high, medium, or low for the priority.');
+    return;
+  }
+
   appState.planner.push({ text: text.trim(), priority: normalizedPriority });
   saveState();
   renderPlanner();

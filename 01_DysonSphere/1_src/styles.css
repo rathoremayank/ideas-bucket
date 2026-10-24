@@ -46,7 +46,6 @@ html {
 }
 
 body {
-  zoom: 0.8;
   margin: 0;
   min-height: 100vh;
   background: linear-gradient(135deg, var(--bg), #edf3ff 56%, #f8eff8);
@@ -153,12 +152,15 @@ button:hover,
 .app-shell {
   position: relative;
   z-index: 1;
-  max-width: 1440px;
+  width: 125%;
+  max-width: 1800px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 280px 1fr;
-  min-height: 100vh;
+  min-height: 125vh;
   padding: 0 18px;
+  transform: scale(0.8);
+  transform-origin: top left;
 }
 
 .sidebar {
@@ -1046,14 +1048,14 @@ body.dark .theme-toggle {
   cursor: pointer;
 }
 
-.habit-day:has(input:checked) {
+.habit-day.checked {
   border-color: rgba(34, 197, 94, 0.45);
   background: rgba(34, 197, 94, 0.18);
   color: var(--success);
   font-weight: 800;
 }
 
-.habit-day:has(input:focus-visible) {
+.habit-day:focus-within {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
@@ -1140,4 +1142,12 @@ body.dark .theme-toggle {
 ::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background: rgba(79, 108, 246, 0.28);
+}
+
+@media (min-width: 1441px) {
+  .app-shell {
+    width: 1800px;
+    margin-left: calc((100% - 1800px) / 2);
+    transform-origin: top center;
+  }
 }
