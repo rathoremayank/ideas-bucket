@@ -1,0 +1,78 @@
+window.ModernMarketProducts = [
+  {
+    id: "ceramic-mug",
+    name: "Everyday Ceramic Mug",
+    description: "A comfortable, durable mug for your daily coffee or tea.",
+    price: 18,
+    icon: "☕",
+    keywords: ["mug", "coffee", "tea", "drink", "morning", "gift", "friend"],
+    focus: "practical",
+    rating: 9.2,
+    reviewCount: 128,
+    feedback: "“The perfect size for my morning coffee. Feels lovely to hold.”",
+    details:
+      "A thoughtfully shaped stoneware mug for slow mornings and everyday coffee breaks. Its balanced handle and glazed finish make it an easy favorite.",
+    features: ["12 oz everyday capacity", "Comfortable rounded handle", "Glazed stoneware finish"],
+    customerReviews: [
+      { name: "Amelia R.", rating: 10, text: "A simple, beautiful mug that I reach for every morning." },
+      { name: "Jordan K.", rating: 9, text: "Nice weight and a comfortable handle. Great everyday mug." },
+    ],
+  },
+  {
+    id: "canvas-tote",
+    name: "Market Canvas Tote",
+    description: "A sturdy reusable carryall for errands and everyday essentials.",
+    price: 24,
+    icon: "👜",
+    keywords: ["tote", "bag", "carry", "shopping", "errands", "gift", "travel"],
+    focus: "practical",
+    rating: 8.8,
+    reviewCount: 86,
+    feedback: "“Roomy without feeling bulky. It has become my everyday bag.”",
+    details:
+      "A dependable canvas carryall for market trips, commutes, and the everyday bits you like to keep close. Lightweight to carry and easy to fold away.",
+    features: ["Durable cotton canvas", "Roomy open main compartment", "Comfortable shoulder straps"],
+    customerReviews: [
+      { name: "Priya S.", rating: 9, text: "Carries groceries comfortably and folds up neatly." },
+      { name: "Noah T.", rating: 8, text: "A useful everyday tote with a clean, simple design." },
+    ],
+  },
+  {
+    id: "desk-lamp",
+    name: "Soft Glow Desk Lamp",
+    description: "Warm, focused light for a calmer workspace.",
+    price: 48,
+    icon: "💡",
+    keywords: ["lamp", "light", "desk", "office", "reading", "work", "gift"],
+    focus: "calm",
+    rating: 9.5,
+    reviewCount: 54,
+    feedback: "“Warm light that makes my desk feel calm and welcoming.”",
+    details:
+      "A compact desk lamp that brings a warm, comfortable pool of light to reading corners and workspaces. Designed to feel at home wherever you need a little focus.",
+    features: ["Warm, eye-comforting light", "Compact desk-friendly footprint", "Simple one-touch control"],
+    customerReviews: [
+      { name: "Mina L.", rating: 10, text: "Exactly the soft light I wanted for reading in the evening." },
+      { name: "Ethan B.", rating: 9, text: "Looks great on my desk and takes up very little space." },
+    ],
+  },
+  {
+    id: "notebook-set",
+    name: "Pocket Notebook Set",
+    description: "Three handy notebooks for plans, lists, and ideas.",
+    price: 14,
+    icon: "📓",
+    keywords: ["notebook", "journal", "writing", "notes", "planning", "work", "gift"],
+    focus: "writing",
+    rating: 9.0,
+    reviewCount: 103,
+    feedback: "“Just the right size to keep in my bag for all the little ideas.”",
+    details:
+      "A set of three pocket notebooks for notes, lists, and ideas worth keeping. Small enough to take anywhere, with plenty of room for the things on your mind.",
+    features: ["Three notebooks in one set", "Pocket-friendly format", "Smooth pages for everyday notes"],
+    customerReviews: [
+      { name: "Sofia M.", rating: 9, text: "Perfect for quick notes and lists when I am on the go." },
+      { name: "Caleb W.", rating: 9, text: "A lovely little set. I keep one in each bag." },
+    ],
+  },
+];

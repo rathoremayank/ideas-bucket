@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Read product details and customer reviews at Modern Market." />
+    <title>Product details | Modern Market</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="products.js" defer></script>
+    <script src="store.js" defer></script>
+    <script src="product.js" defer></script>
+  </head>
+  <body class="shop-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Modern Market home">modern<span>market</span></a>
+      <div class="cart-indicator" aria-label="Shopping cart">
+        <span>Cart</span>
+        <span id="cartCount" class="cart-count">0</span>
+      </div>
+    </header>
+    <main class="shop-main">
+      <a id="backToResults" class="back-link" href="index.html">← Back to results</a>
+      <section id="productDetails" class="product-details" aria-live="polite"></section>
+    </main>
+    <footer class="site-footer">
+      <p>Less scrolling. More finding.</p>
+      <p id="cartSummary">Your cart is empty.</p>
+    </footer>
+  </body>
+</html>

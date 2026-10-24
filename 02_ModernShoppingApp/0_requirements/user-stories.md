@@ -22,15 +22,26 @@ Acceptance criteria:
 - The shopper can navigate back or edit the search.
 - Preferences are used to rank relevant products.
 
-### 1.3 See a shortlist
+### 1.3 Explore results
 
-As a shopper, I want to see only a few relevant matches so that choosing what to buy feels simple.
+As a shopper, I want to see every product that matches my search on a dedicated results page so that I can compare the available options.
 
 Acceptance criteria:
 
-- Results are based on the search terms and selected preferences.
-- The shortlist contains no more than three products.
+- All products matching the search are shown, ordered by relevance and preferences.
+- Each result shows its name, price, and rating.
+- Hovering over or focusing a result reveals rating context and customer feedback.
 - An unrelated search shows a helpful empty state and a way to start over.
+
+### 1.4 View product details
+
+As a shopper, I want to open a product page so that I can review its details before deciding to buy.
+
+Acceptance criteria:
+
+- Selecting a result opens a dedicated product page for that item.
+- The page shows a detailed description, key features, price, rating, and customer reviews.
+- The shopper can add the product to the cart from the detail page.
 
 ## Epic 2: Cart
 
@@ -80,7 +91,7 @@ Acceptance criteria:
 
 ## MVP roadmap
 
-1. Guided search, preference questions, and ranked shortlist
-2. Product details and cart management
+1. Guided search, preference questions, and complete results page
+2. Product detail pages and cart management
 3. Checkout and order confirmation
 4. Cart persistence, accounts, and order history

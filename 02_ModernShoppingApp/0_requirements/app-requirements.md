@@ -17,13 +17,16 @@ Build a clean, responsive online shopping experience that helps customers discov
 
 - Greet shoppers with a prompt to describe what they want to buy.
 - Ask two short follow-up questions about shopping priorities and budget.
-- Present a small, ranked shortlist based on query relevance and preferences.
+- Navigate to a dedicated results page with every product matching the search.
+- Rank matching products by query relevance and selected preferences without hiding matches.
+- Preview ratings and customer feedback when a result is hovered or keyboard-focused.
 - Show a helpful empty state when the search has no relevant matches.
 
 ### Product details
 
-- Provide space for product imagery, descriptions, price, availability, and options such as size or color.
-- Make product selection and add-to-cart actions clear.
+- Open a dedicated product page when a shopper selects a result.
+- Show product description, features, price, rating, and customer reviews.
+- Keep add-to-cart actions available from results and product detail pages.
 
 ### Shopping cart
 
@@ -53,7 +56,7 @@ Build a clean, responsive online shopping experience that helps customers discov
 3. Cart quantity updates, item removal, and subtotal.
 4. Basic checkout and order confirmation.
 
-The current starter implements a guided search, two preference questions, a ranked shortlist, and a basic add-to-cart subtotal. Checkout, persistence, and account features are future work.
+The current starter implements guided search, two preference questions, a full matching-results page, hover/focus feedback previews, product detail pages, and a basic cart subtotal. Checkout and accounts are future work.
 
 ## Future enhancements
 
