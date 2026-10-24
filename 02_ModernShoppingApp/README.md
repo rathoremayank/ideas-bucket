@@ -9,11 +9,12 @@ A clean, search-first shopping prototype. Shoppers describe what they need, answ
 
 ## Run locally
 
-Open `1_src/index.html` in a modern browser. The guided search, full results page, product details, and basic cart subtotal work in this starter. Product ratings and feedback are sample content; checkout and accounts are not implemented yet.
+Open `1_src/index.html` in a modern browser. The guided search, full results page, product details, and basic cart subtotal work in this starter. The catalog includes 104 items: four featured products and 100 additional products. Ratings and feedback are sample content; checkout and accounts are not implemented yet.
 
 ## Current starter features
 
 - Search-first flow with two preference questions
+- 104 searchable products across home, kitchen, workspace, travel, outdoors, wellness, accessories, stationery, lighting, and storage
 - Dedicated results page with all matching items
 - Hover/focus rating and customer-feedback previews
 - Individual product detail pages with sample reviews

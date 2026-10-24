@@ -1,4 +1,4 @@
-window.ModernMarketProducts = [
+const featuredProducts = [
   {
     id: "ceramic-mug",
     name: "Everyday Ceramic Mug",
@@ -76,3 +76,205 @@ window.ModernMarketProducts = [
     ],
   },
 ];
+
+const productCollections = [
+  {
+    focus: "practical",
+    icon: "🍳",
+    features: ["Made for regular everyday use", "Simple, easy-care design", "Thoughtful details for daily routines"],
+    items: [
+      ["Pour-Over Coffee Dripper", "A reusable dripper for a slower, more hands-on morning coffee.", 22, ["coffee", "pour over", "brewing", "kitchen"]],
+      ["Glass Cold Brew Bottle", "A fridge-friendly bottle for making smooth cold brew at home.", 28, ["coffee", "cold brew", "drink", "bottle"]],
+      ["Bamboo Serving Board", "A versatile board for serving snacks, fruit, and small bites.", 32, ["kitchen", "serving", "wood", "board"]],
+      ["Stackable Prep Bowls", "A nesting set of prep bowls that keeps kitchen counters organized.", 26, ["kitchen", "bowl", "cooking", "storage"]],
+      ["Linen Tea Towel Set", "Soft, absorbent towels for drying dishes and keeping close at hand.", 20, ["kitchen", "linen", "towel", "cleaning"]],
+      ["Insulated Travel Tumbler", "A reusable tumbler that keeps a favorite drink close on the go.", 30, ["drink", "coffee", "travel", "tumbler"]],
+      ["Compact Spice Rack", "A tidy countertop rack that keeps everyday seasonings within reach.", 34, ["kitchen", "spice", "organization", "storage"]],
+      ["Ceramic Oil Pourer", "A glazed pourer for keeping cooking oil ready beside the stove.", 24, ["kitchen", "cooking", "ceramic", "oil"]],
+      ["Reusable Food Wrap Set", "Washable wraps for covering bowls and packing everyday snacks.", 16, ["kitchen", "reusable", "food", "storage"]],
+      ["Cotton Apron", "A comfortable kitchen apron with practical pockets for cooking.", 29, ["kitchen", "cooking", "cotton", "apron"]],
+    ],
+  },
+  {
+    focus: "calm",
+    icon: "🪴",
+    features: ["Designed to make a room feel more considered", "Works with a range of home styles", "An easy everyday home accent"],
+    items: [
+      ["Textured Cushion Cover", "A soft woven cover that brings a subtle texture to a favorite chair.", 28, ["home", "cushion", "living room", "textile"]],
+      ["Ceramic Bud Vase", "A small glazed vase for a single stem or a few gathered flowers.", 19, ["home", "vase", "flowers", "decor"]],
+      ["Cotton Throw Blanket", "A lightweight layer for cool evenings on the sofa or bed.", 46, ["home", "blanket", "throw", "cozy"]],
+      ["Minimal Wall Clock", "A quiet, easy-to-read clock with a clean profile for any room.", 38, ["home", "clock", "wall", "decor"]],
+      ["Woven Storage Basket", "A flexible basket for keeping blankets, toys, or daily essentials together.", 35, ["home", "basket", "storage", "organization"]],
+      ["Scented Soy Candle", "A soy wax candle for adding a soft, welcoming feel to a room.", 24, ["home", "candle", "scent", "relax"]],
+      ["Linen Cushion Set", "A pair of breathable linen cushions for a relaxed living space.", 42, ["home", "cushion", "linen", "living room"]],
+      ["Stoneware Planter", "A sturdy planter with a simple finish for a favorite indoor plant.", 27, ["home", "plant", "planter", "garden"]],
+      ["Soft Cotton Bath Mat", "A plush cotton mat that adds a comfortable step out of the shower.", 25, ["home", "bathroom", "bath", "cotton"]],
+      ["Wooden Picture Frame", "A tabletop frame for giving a favorite photograph a place to live.", 18, ["home", "photo", "frame", "decor"]],
+    ],
+  },
+  {
+    focus: "writing",
+    icon: "🖊️",
+    features: ["Made to support focused work", "Compact, desk-friendly design", "A useful addition to a daily workspace"],
+    items: [
+      ["Hardcover Daily Planner", "A structured daily planner for priorities, appointments, and notes.", 26, ["work", "planner", "planning", "office"]],
+      ["Brass Desk Pen", "A balanced metal pen that feels at home beside a notebook.", 21, ["work", "pen", "writing", "office"]],
+      ["Felt Desk Organizer", "A soft-sided organizer for keeping small desk essentials together.", 29, ["work", "desk", "organization", "office"]],
+      ["Monitor Riser Shelf", "A compact shelf that raises a monitor and frees up desk space.", 52, ["work", "desk", "office", "computer"]],
+      ["Wireless Charging Pad", "A simple charging spot that helps keep a workspace uncluttered.", 36, ["work", "charger", "phone", "office"]],
+      ["Laptop Sleeve", "A padded sleeve for carrying a laptop between home and work.", 34, ["work", "laptop", "travel", "case"]],
+      ["Weekly Desk Pad", "A tear-off weekly layout for keeping priorities visible at a glance.", 17, ["work", "planner", "notes", "desk"]],
+      ["Adjustable Book Stand", "A folding stand that holds a book or tablet at a comfortable angle.", 24, ["work", "reading", "book", "desk"]],
+      ["Cable Tidy Kit", "Reusable cable ties and clips for a neater desk setup.", 12, ["work", "cable", "organization", "desk"]],
+      ["Ergonomic Mouse Pad", "A supportive padded surface for more comfortable desk work.", 20, ["work", "mouse", "office", "computer"]],
+    ],
+  },
+  {
+    focus: "practical",
+    icon: "🎒",
+    features: ["Lightweight for everyday carrying", "Designed to keep essentials close", "Useful at home, work, or while traveling"],
+    items: [
+      ["Weekender Duffel Bag", "A roomy soft-sided bag for short trips and overnight stays.", 68, ["travel", "bag", "weekend", "luggage"]],
+      ["Packing Cube Set", "A set of lightweight cubes that makes suitcase packing easier.", 32, ["travel", "packing", "organization", "luggage"]],
+      ["Passport Travel Wallet", "A slim travel wallet for keeping a passport and cards together.", 27, ["travel", "passport", "wallet", "organizer"]],
+      ["Reusable Water Bottle", "A sturdy bottle for carrying water through a busy day.", 23, ["travel", "water", "bottle", "hydration"]],
+      ["Compact Umbrella", "A folding umbrella that fits neatly into a day bag.", 29, ["travel", "rain", "umbrella", "commute"]],
+      ["Travel Toiletry Pouch", "A wipe-clean pouch for keeping travel-size essentials organized.", 22, ["travel", "toiletry", "bag", "organizer"]],
+      ["Foldable Daypack", "A lightweight backpack that packs down when not in use.", 39, ["travel", "backpack", "hiking", "bag"]],
+      ["Luggage Tag Pair", "Two easy-to-spot tags for identifying checked or carry-on bags.", 14, ["travel", "luggage", "tag", "accessory"]],
+      ["Travel Neck Pillow", "A supportive, packable pillow for longer journeys.", 31, ["travel", "flight", "pillow", "comfort"]],
+      ["Insulated Lunch Bag", "A compact insulated bag for carrying lunch to work or outdoors.", 28, ["travel", "lunch", "food", "bag"]],
+    ],
+  },
+  {
+    focus: "practical",
+    icon: "🌿",
+    features: ["Ready for everyday outdoor use", "Easy to pack and carry", "A practical companion for time outside"],
+    items: [
+      ["Stainless Camping Mug", "A lightweight mug for coffee around the campsite or at home.", 18, ["outdoors", "camping", "mug", "coffee"]],
+      ["Packable Picnic Blanket", "A foldable blanket for park lunches and relaxed afternoons outside.", 42, ["outdoors", "picnic", "blanket", "park"]],
+      ["Garden Hand Tool Set", "A compact set of essential hand tools for small garden tasks.", 33, ["outdoors", "garden", "plant", "tools"]],
+      ["Solar Path Light Set", "A set of solar lights for adding a gentle glow along a garden path.", 45, ["outdoors", "garden", "light", "solar"]],
+      ["Enamel Camping Plate Set", "Durable lightweight plates for camping trips and outdoor meals.", 30, ["outdoors", "camping", "plate", "picnic"]],
+      ["Insulated Cooler Tote", "A soft-sided cooler tote for keeping picnic snacks together.", 49, ["outdoors", "cooler", "picnic", "food"]],
+      ["Hiking Merino Socks", "Soft merino-blend socks made for comfortable walks and hikes.", 24, ["outdoors", "hiking", "socks", "walking"]],
+      ["Compact Binoculars", "Portable binoculars for birdwatching and taking in distant views.", 58, ["outdoors", "birdwatching", "nature", "hiking"]],
+      ["Waterproof Picnic Mat", "A wipe-clean mat for picnics, concerts, and days at the park.", 37, ["outdoors", "picnic", "waterproof", "park"]],
+      ["Canvas Garden Apron", "A durable apron with handy pockets for gardening essentials.", 31, ["outdoors", "garden", "apron", "tools"]],
+    ],
+  },
+  {
+    focus: "calm",
+    icon: "🧘",
+    features: ["Designed to support a more restful routine", "Simple and comfortable to use", "A thoughtful companion for everyday wellbeing"],
+    items: [
+      ["Cork Yoga Mat", "A grippy natural cork mat for stretching and home yoga sessions.", 58, ["wellness", "yoga", "exercise", "fitness"]],
+      ["Cork Massage Ball Set", "Two firm massage balls for targeted release after a workout.", 19, ["wellness", "massage", "recovery", "fitness"]],
+      ["Weighted Eye Pillow", "A soft eye pillow to help create a quieter moment of rest.", 22, ["wellness", "relax", "sleep", "rest"]],
+      ["Aromatherapy Diffuser", "A compact diffuser for a gentle scent during quiet routines.", 44, ["wellness", "aromatherapy", "scent", "relax"]],
+      ["Stainless Meditation Bell", "A clear, resonant bell to mark the beginning of a meditation session.", 28, ["wellness", "meditation", "mindfulness", "calm"]],
+      ["Foam Roller", "A textured roller for warmups, stretching, and post-workout recovery.", 35, ["wellness", "fitness", "exercise", "recovery"]],
+      ["Silk Sleep Mask", "A smooth, light-blocking mask for a more comfortable rest.", 25, ["wellness", "sleep", "travel", "rest"]],
+      ["Glass Infuser Bottle", "A glass bottle with a removable infuser for tea on the go.", 32, ["wellness", "tea", "infuser", "drink"]],
+      ["Stretching Strap", "A simple strap to help support flexibility and mobility work.", 16, ["wellness", "stretch", "fitness", "exercise"]],
+      ["Breathing Exercise Cards", "A pocket-sized set of prompts for short mindful breathing breaks.", 15, ["wellness", "mindfulness", "breathing", "calm"]],
+    ],
+  },
+  {
+    focus: "practical",
+    icon: "🧢",
+    features: ["Comfortable for daily use", "Simple style that pairs easily", "A useful accessory for life on the go"],
+    items: [
+      ["Leather Card Holder", "A slim card holder for carrying everyday essentials without bulk.", 38, ["accessories", "wallet", "cards", "leather"]],
+      ["Reversible Cotton Bucket Hat", "A lightweight reversible hat for sunny walks and weekends.", 29, ["accessories", "hat", "cotton", "sun"]],
+      ["Polarized Sunglasses", "Classic polarized sunglasses for comfortable bright-day wear.", 46, ["accessories", "sunglasses", "sun", "travel"]],
+      ["Everyday Leather Belt", "A versatile leather belt with a clean, understated buckle.", 42, ["accessories", "belt", "leather", "clothing"]],
+      ["Merino Knit Beanie", "A soft merino-blend beanie for cool commutes and outdoor walks.", 34, ["accessories", "hat", "beanie", "winter"]],
+      ["Stainless Steel Watch", "A simple everyday watch with a clean dial and steel band.", 89, ["accessories", "watch", "steel", "gift"]],
+      ["Classic Wool Scarf", "A warm, easy-to-style scarf for cooler weather.", 55, ["accessories", "scarf", "wool", "winter"]],
+      ["Minimal Hoop Earrings", "Lightweight polished hoops for a simple everyday look.", 32, ["accessories", "jewelry", "earrings", "gift"]],
+      ["Braided Keychain Loop", "A tactile woven loop that makes keys easier to find in a bag.", 12, ["accessories", "keys", "keychain", "everyday"]],
+      ["Cotton Bandana Set", "Two versatile cotton bandanas for everyday styling and travel.", 18, ["accessories", "cotton", "bandana", "travel"]],
+    ],
+  },
+  {
+    focus: "writing",
+    icon: "✏️",
+    features: ["A pleasure to use for notes and ideas", "Easy to keep close at hand", "A practical stationery essential"],
+    items: [
+      ["Fountain Pen Starter Set", "A beginner-friendly fountain pen set for letters, notes, and journaling.", 36, ["stationery", "pen", "writing", "journal"]],
+      ["Watercolor Pocket Set", "A compact watercolor palette for painting wherever inspiration strikes.", 28, ["stationery", "art", "painting", "creative"]],
+      ["Dot Grid Journal", "A versatile dot-grid journal for sketches, notes, and planning.", 21, ["stationery", "journal", "writing", "notebook"]],
+      ["Colored Pencil Set", "A set of smooth colored pencils for drawing, shading, and creative play.", 24, ["stationery", "art", "drawing", "creative"]],
+      ["Washi Tape Collection", "A colorful collection of decorative tapes for journals and projects.", 14, ["stationery", "craft", "tape", "creative"]],
+      ["Desk Letter Tray", "A simple tray for keeping papers and correspondence in order.", 26, ["stationery", "desk", "office", "organization"]],
+      ["Calligraphy Practice Kit", "A starter kit with nibs and practice sheets for lettering.", 39, ["stationery", "calligraphy", "writing", "art"]],
+      ["Pocket Sketchbook", "A small sketchbook with sturdy pages for drawings on the go.", 16, ["stationery", "sketch", "drawing", "notebook"]],
+      ["Magnetic Bookmark Set", "A set of fold-over bookmarks that stay in place between pages.", 11, ["stationery", "reading", "book", "bookmark"]],
+      ["Precision Scissor Set", "A compact pair of craft scissors for careful cutting and paper projects.", 13, ["stationery", "craft", "scissors", "office"]],
+    ],
+  },
+  {
+    focus: "calm",
+    icon: "🕯️",
+    features: ["Thoughtful lighting for a comfortable room", "Designed for an inviting everyday atmosphere", "Easy to place around the home"],
+    items: [
+      ["Rechargeable Reading Light", "A clip-on reading light with adjustable brightness for late-night pages.", 27, ["lighting", "reading", "book", "lamp"]],
+      ["Pleated Table Lamp", "A compact pleated lamp that adds a soft glow to a bedside table.", 64, ["lighting", "lamp", "bedroom", "home"]],
+      ["Dimmable Floor Lamp", "An adjustable floor lamp for creating a comfortable reading corner.", 118, ["lighting", "lamp", "floor", "living room"]],
+      ["Glass Pendant Light", "A simple pendant shade that brings a warm focal point to a room.", 96, ["lighting", "pendant", "glass", "home"]],
+      ["LED Under-Cabinet Lights", "A set of slim lights for adding useful illumination to kitchen counters.", 39, ["lighting", "kitchen", "led", "home"]],
+      ["Paper Lantern Shade", "A lightweight paper shade that diffuses light softly across a room.", 32, ["lighting", "lantern", "paper", "decor"]],
+      ["Brass Picture Light", "A narrow wall light for gently illuminating framed artwork.", 72, ["lighting", "wall", "art", "brass"]],
+      ["Motion Sensor Night Light", "A small motion-activated light for softly lit nighttime pathways.", 18, ["lighting", "night light", "bedroom", "sensor"]],
+      ["Outdoor String Lights", "A weather-ready string of lights for patios and outdoor gatherings.", 48, ["lighting", "outdoors", "patio", "string lights"]],
+      ["Color Changing Bulb Pair", "Two app-ready bulbs for adjusting the color and warmth of a room.", 30, ["lighting", "bulb", "smart home", "color"]],
+    ],
+  },
+  {
+    focus: "practical",
+    icon: "🧺",
+    features: ["Helps make the most of everyday space", "Simple to use around the home", "Keeps useful essentials organized"],
+    items: [
+      ["Under-Bed Storage Bags", "A pair of zippered bags for storing seasonal items beneath a bed.", 28, ["storage", "bedroom", "organization", "clothing"]],
+      ["Modular Drawer Dividers", "Adjustable dividers for bringing order to drawers and small spaces.", 22, ["storage", "drawer", "organization", "home"]],
+      ["Clear Pantry Canister Set", "A set of see-through canisters for organizing dry pantry staples.", 42, ["storage", "kitchen", "pantry", "food"]],
+      ["Wall-Mounted Key Rack", "A compact entryway rack that gives keys a consistent home.", 19, ["storage", "entryway", "keys", "organization"]],
+      ["Foldable Laundry Basket", "A flexible laundry basket that folds away when not in use.", 26, ["storage", "laundry", "basket", "home"]],
+      ["Stackable Shoe Organizer", "Stackable open shelves for keeping everyday footwear in order.", 37, ["storage", "shoes", "entryway", "organization"]],
+      ["Over-Door Pocket Organizer", "A hanging organizer with pockets for small household essentials.", 24, ["storage", "organizer", "door", "home"]],
+      ["Vacuum Storage Bag Set", "Reusable compression bags that reduce bulk when storing textiles.", 20, ["storage", "clothing", "travel", "organization"]],
+      ["Cable Storage Box", "A ventilated box that hides a power strip and loose charging cables.", 31, ["storage", "cable", "desk", "organization"]],
+      ["Bamboo Bathroom Shelf", "A slim shelf for keeping daily bathroom essentials neatly together.", 34, ["storage", "bathroom", "shelf", "organization"]],
+    ],
+  },
+];
+
+const additionalProducts = productCollections.flatMap((collection, collectionIndex) =>
+  collection.items.map(([name, description, price, keywords], itemIndex) => {
+    const id = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const rating = Number((8.2 + ((collectionIndex * 7 + itemIndex * 3) % 18) / 10).toFixed(1));
+    const reviewCount = 24 + ((collectionIndex * 37 + itemIndex * 19) % 280);
+
+    return {
+      id,
+      name,
+      description,
+      price,
+      icon: collection.icon,
+      keywords: [...keywords, "gift", "everyday"],
+      focus: collection.focus,
+      rating,
+      reviewCount,
+      feedback: `"${description}"`,
+      details: `${description} ${collection.features[0]}. A considered choice for everyday use, with a straightforward design that is easy to enjoy.`,
+      features: collection.features,
+      customerReviews: [
+        { name: "Sample shopper", rating, text: description },
+        { name: "Sample shopper", rating: Math.max(7, Number((rating - 0.4).toFixed(1))), text: collection.features[1] + "." },
+      ],
+    };
+  }),
+);
+
+window.ModernMarketProducts = [...featuredProducts, ...additionalProducts];
