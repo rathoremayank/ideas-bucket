@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DysonSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="particles" aria-hidden="true">
+      <span class="particle p1"></span>
+      <span class="particle p2"></span>
+      <span class="particle p3"></span>
+      <span class="particle p4"></span>
+      <span class="particle p5"></span>
+      <span class="particle p6"></span>
+      <span class="particle p7"></span>
+      <span class="particle p8"></span>
+      <span class="particle p9"></span>
+      <span class="particle p10"></span>
+    </div>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">G</div>
+          <div>
+            <p class="eyebrow">Personal OS</p>
+            <h1>DysonSphere</h1>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active" data-section="overview">Overview</button>
+          <button class="nav-item" data-section="areas">Life Areas</button>
+          <button class="nav-item" data-section="habits">Habits</button>
+          <button class="nav-item" data-section="goals">Goals</button>
+          <button class="nav-item" data-section="journal">Journal</button>
+          <button class="nav-item" data-section="planner">Planner</button>
+        </nav>
+
+        <div class="profile-card">
+          <p class="eyebrow">Current focus</p>
+          <h3>Healthset Sprint-01</h3>
+          <div class="mini-meta">
+            <span>30-day reset</span>
+            <span>Active</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h2>Mayank’s growth dashboard</h2>
+          </div>
+          <div class="topbar-actions">
+            <button id="exportDataBtn" class="secondary-button" type="button" aria-label="Export data as JSON">⇩</button>
+            <button id="importDataBtn" class="secondary-button" type="button" aria-label="Import data from JSON">⇪</button>
+            <input id="importFileInput" type="file" accept="application/json" hidden />
+            <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+          </div>
+        </header>
+
+        <section id="overview" class="panel visible">
+          <div class="hero-card">
+            <div>
+              <p class="eyebrow">Quarterly pulse</p>
+              <h3>Momentum is building — but debt and consistency still need attention.</h3>
+            </div>
+            <div class="hero-score">
+              <span>Overall score</span>
+              <strong>7.4</strong>
+            </div>
+          </div>
+
+          <div id="statsGrid" class="stats-grid"></div>
+
+          <div class="split-grid">
+            <div class="panel-card">
+              <div class="section-heading">
+                <h3>Life area scorecard</h3>
+                <span>1–10 scale</span>
+              </div>
+              <div id="areaScorecard" class="area-scorecard"></div>
+            </div>
+
+            <div class="panel-card">
+              <div class="section-heading">
+                <h3>Focus trend</h3>
+                <span>Last 6 weeks</span>
+              </div>
+              <div class="chart-bars" id="trendChart"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="areas" class="panel">
+          <div class="section-heading">
+            <h3>Life areas</h3>
+            <button class="primary-button small">Add area</button>
+          </div>
+          <div id="areasGrid" class="areas-grid"></div>
+        </section>
+
+        <section id="habits" class="panel">
+          <div class="section-heading">
+            <h3>Habit tracker</h3>
+            <span id="habitSummary">3 of 7 completed</span>
+          </div>
+          <div id="habitList" class="habit-list"></div>
+        </section>
+
+        <section id="goals" class="panel">
+          <div class="section-heading">
+            <h3>Goals</h3>
+            <button class="primary-button small">New goal</button>
+          </div>
+          <div id="goalsList" class="goals-list"></div>
+        </section>
+
+        <section id="journal" class="panel">
+          <div class="section-heading">
+            <h3>Journal & reflections</h3>
+            <span>Daily check-in</span>
+          </div>
+
+          <form id="journalForm" class="journal-form">
+            <textarea id="journalInput" rows="4" placeholder="What went well today? What needs attention?"></textarea>
+            <div class="journal-form-actions">
+              <select id="journalMood">
+                <option value="Focused">Focused</option>
+                <option value="Calm">Calm</option>
+                <option value="Stressed">Stressed</option>
+                <option value="Motivated">Motivated</option>
+                <option value="Drained">Drained</option>
+              </select>
+              <button type="submit" class="primary-button">Save reflection</button>
+            </div>
+          </form>
+
+          <div id="journalEntries" class="journal-entries"></div>
+        </section>
+
+        <section id="planner" class="panel">
+          <div class="section-heading">
+            <h3>Weekly focus planner</h3>
+            <span>Top 3 priorities</span>
+          </div>
+          <div id="plannerList" class="planner-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
