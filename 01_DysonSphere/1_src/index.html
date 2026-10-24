@@ -113,7 +113,10 @@
         <section id="habits" class="panel">
           <div class="section-heading">
             <h3>Habit tracker</h3>
-            <span id="habitSummary">3 of 7 completed</span>
+            <div class="section-actions">
+              <span id="habitSummary">3 of 7 completed</span>
+              <button id="addHabitBtn" class="primary-button small" type="button">Add habit</button>
+            </div>
           </div>
           <div id="habitList" class="habit-list"></div>
         </section>
@@ -152,12 +155,19 @@
         <section id="planner" class="panel">
           <div class="section-heading">
             <h3>Weekly focus planner</h3>
-            <span>Top 3 priorities</span>
+            <div class="section-actions">
+              <span>Weekly priorities</span>
+              <button id="addPlannerItemBtn" class="primary-button small" type="button">Add item</button>
+            </div>
           </div>
           <div id="plannerList" class="planner-list"></div>
         </section>
       </main>
     </div>
+
+    <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle">
+      <div id="detailContent"></div>
+    </dialog>
 
     <script src="app.js"></script>
   </body>

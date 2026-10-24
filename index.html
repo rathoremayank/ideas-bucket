@@ -12,12 +12,76 @@
         font-family: Arial, Helvetica, sans-serif;
       }
 
+      main {
+        animation: fade-in 500ms ease-out both;
+      }
+
+      h1 {
+        animation: rise-in 500ms ease-out both;
+      }
+
       ul {
         padding-left: 20px;
       }
 
       li + li {
         margin-top: 12px;
+      }
+
+      li {
+        animation: rise-in 500ms ease-out both;
+      }
+
+      li:nth-child(2) {
+        animation-delay: 100ms;
+      }
+
+      a {
+        display: inline-block;
+        color: inherit;
+        text-decoration-color: transparent;
+        text-underline-offset: 4px;
+        transition: color 180ms ease, text-decoration-color 180ms ease, transform 180ms ease;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: #2563eb;
+        text-decoration: underline;
+        text-decoration-color: currentColor;
+        transform: translateX(3px);
+      }
+
+      a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 4px;
+      }
+
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      @keyframes rise-in {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
       }
     </style>
   </head>
