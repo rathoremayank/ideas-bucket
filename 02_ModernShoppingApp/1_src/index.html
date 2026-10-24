@@ -5,47 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Browse thoughtfully selected everyday products in the Modern Shopping App."
+      content="Tell Modern Market what you need. Answer two quick questions to find a few thoughtful matches."
     />
-    <title>Modern Market | Shop everyday essentials</title>
+    <title>Modern Market | Find what you need</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#" aria-label="Modern Market home">modern<span>market</span></a>
-      <form class="search-form" role="search">
-        <label class="visually-hidden" for="productSearch">Search products</label>
-        <input id="productSearch" name="search" type="search" placeholder="Search products" />
-        <button type="submit">Search</button>
-      </form>
-      <button class="cart-button" type="button" aria-label="Shopping cart, 0 items">
-        Cart <span id="cartCount" class="cart-count" aria-hidden="true">0</span>
-      </button>
+      <div class="cart-indicator" aria-label="Shopping cart">
+        <span>Cart</span>
+        <span id="cartCount" class="cart-count">0</span>
+      </div>
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="heroTitle">
-        <p class="eyebrow">Thoughtful finds for everyday living</p>
-        <h1 id="heroTitle">Good things, made simple.</h1>
-        <p>Discover practical favorites for your home, work, and everything in between.</p>
-      </section>
-
-      <section class="catalog" aria-labelledby="catalogTitle">
-        <div class="catalog-heading">
-          <div>
-            <p class="eyebrow">The collection</p>
-            <h2 id="catalogTitle">Popular picks</h2>
-          </div>
-          <p id="resultSummary" class="result-summary" aria-live="polite"></p>
+      <section class="experience" aria-labelledby="welcomeTitle">
+        <div class="intro">
+          <p class="eyebrow">A more thoughtful way to shop</p>
+          <h1 id="welcomeTitle">What are you looking for?</h1>
+          <p>Tell us a little about what you need. We’ll find a few good options, not an endless list.</p>
         </div>
-        <div id="productGrid" class="product-grid"></div>
+
+        <form id="searchForm" class="search-form" role="search">
+          <label class="visually-hidden" for="productSearch">What do you want to buy?</label>
+          <input
+            id="productSearch"
+            name="search"
+            type="search"
+            placeholder="Try “a mug for my morning coffee”"
+            autocomplete="off"
+            required
+          />
+          <button class="primary-button" type="submit">Find my match <span aria-hidden="true">→</span></button>
+        </form>
+
+        <p class="search-hint">A product, a purpose, or even just a feeling.</p>
+
+        <section id="questions" class="questions" aria-live="polite" hidden></section>
+        <section id="results" class="results" aria-live="polite" hidden></section>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Modern Market <span aria-hidden="true">&middot;</span> A shopping experience starter</p>
-      <p id="cartSummary" aria-live="polite">Your cart is empty.</p>
+      <p>Less scrolling. More finding.</p>
+      <p id="cartSummary">Your cart is empty.</p>
     </footer>
   </body>
 </html>

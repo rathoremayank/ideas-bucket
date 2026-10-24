@@ -1,6 +1,6 @@
 # Modern Shopping App
 
-A responsive storefront prototype for discovering products and building a shopping cart. This project starts with plain HTML, CSS, and JavaScript so it can be opened directly in a browser without a build step.
+A clean, search-first shopping prototype. Shoppers describe what they need, answer two quick preference questions, and get a short list of relevant products instead of browsing a full catalog. Built with plain HTML, CSS, and JavaScript so it can be opened directly in a browser without a build step.
 
 ## Project structure
 
@@ -9,13 +9,13 @@ A responsive storefront prototype for discovering products and building a shoppi
 
 ## Run locally
 
-Open `1_src/index.html` in a modern browser. Product search and adding products to the cart work in this starter; checkout, accounts, and persistent cart storage are not implemented yet.
+Open `1_src/index.html` in a modern browser. The guided search, product shortlist, and basic cart subtotal work in this starter; checkout, accounts, and persistent cart storage are not implemented yet.
 
 ## Current starter features
 
-- Responsive storefront layout
-- Product cards with prices and descriptions
-- Product search
-- Cart item count and subtotal
+- Search-first shopping flow with recipient/use and budget questions
+- Ranked product shortlist, limited to three matches
+- Responsive layout and clear no-match state
+- Add-to-cart count and subtotal
 
-See [app requirements](0_requirements/app-requirements.md) and [user stories](0_requirements/user-stories.md) for the initial product scope.
+See [app requirements](0_requirements/app-requirements.md) and [user stories](0_requirements/user-stories.md) for the product scope.

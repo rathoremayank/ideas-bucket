@@ -2,25 +2,35 @@
 
 ## Epic 1: Product discovery
 
-### 1.1 Browse products
+### 1.1 Describe what you need
 
-As a shopper, I want to browse a product catalog so that I can find items I may want to buy.
-
-Acceptance criteria:
-
-- Each product card shows a name, description, and price.
-- The catalog adapts to mobile and desktop screen sizes.
-- An empty catalog or empty search result has a clear message.
-
-### 1.2 Search products
-
-As a shopper, I want to search by product name or description so that I can find relevant items quickly.
+As a shopper, I want to describe what I want to buy in a search box so that I can start with my need instead of browsing an endless catalog.
 
 Acceptance criteria:
 
-- Search results update to match the entered query.
-- Search is case-insensitive.
-- Clearing the query restores the full catalog.
+- The welcome prompt makes it clear what information to enter.
+- The search accepts a product, purpose, or natural-language phrase.
+- Submitting a non-empty search starts the guided flow.
+
+### 1.2 Refine the search
+
+As a shopper, I want to answer a couple of quick questions so that the recommendations reflect what matters to me and my budget.
+
+Acceptance criteria:
+
+- The flow asks what matters most to the shopper and their budget.
+- The shopper can navigate back or edit the search.
+- Preferences are used to rank relevant products.
+
+### 1.3 See a shortlist
+
+As a shopper, I want to see only a few relevant matches so that choosing what to buy feels simple.
+
+Acceptance criteria:
+
+- Results are based on the search terms and selected preferences.
+- The shortlist contains no more than three products.
+- An unrelated search shows a helpful empty state and a way to start over.
 
 ## Epic 2: Cart
 
@@ -70,7 +80,7 @@ Acceptance criteria:
 
 ## MVP roadmap
 
-1. Catalog and search
+1. Guided search, preference questions, and ranked shortlist
 2. Product details and cart management
 3. Checkout and order confirmation
 4. Cart persistence, accounts, and order history

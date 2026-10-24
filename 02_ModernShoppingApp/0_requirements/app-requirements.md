@@ -15,9 +15,10 @@ Build a clean, responsive online shopping experience that helps customers discov
 
 ### Product discovery
 
-- Present a browsable product catalog with clear names, descriptions, and prices.
-- Let shoppers search the catalog by product name or description.
-- Show a useful empty state when no products match a search.
+- Greet shoppers with a prompt to describe what they want to buy.
+- Ask two short follow-up questions about shopping priorities and budget.
+- Present a small, ranked shortlist based on query relevance and preferences.
+- Show a helpful empty state when the search has no relevant matches.
 
 ### Product details
 
@@ -52,7 +53,7 @@ Build a clean, responsive online shopping experience that helps customers discov
 3. Cart quantity updates, item removal, and subtotal.
 4. Basic checkout and order confirmation.
 
-The current starter implements the catalog search and a basic add-to-cart subtotal. Checkout, persistence, and account features are future work.
+The current starter implements a guided search, two preference questions, a ranked shortlist, and a basic add-to-cart subtotal. Checkout, persistence, and account features are future work.
 
 ## Future enhancements
 
