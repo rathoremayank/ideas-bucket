@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse thoughtfully selected everyday products in the Modern Shopping App."
+    />
+    <title>Modern Market | Shop everyday essentials</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Modern Market home">modern<span>market</span></a>
+      <form class="search-form" role="search">
+        <label class="visually-hidden" for="productSearch">Search products</label>
+        <input id="productSearch" name="search" type="search" placeholder="Search products" />
+        <button type="submit">Search</button>
+      </form>
+      <button class="cart-button" type="button" aria-label="Shopping cart, 0 items">
+        Cart <span id="cartCount" class="cart-count" aria-hidden="true">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <p class="eyebrow">Thoughtful finds for everyday living</p>
+        <h1 id="heroTitle">Good things, made simple.</h1>
+        <p>Discover practical favorites for your home, work, and everything in between.</p>
+      </section>
+
+      <section class="catalog" aria-labelledby="catalogTitle">
+        <div class="catalog-heading">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2 id="catalogTitle">Popular picks</h2>
+          </div>
+          <p id="resultSummary" class="result-summary" aria-live="polite"></p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Modern Market <span aria-hidden="true">&middot;</span> A shopping experience starter</p>
+      <p id="cartSummary" aria-live="polite">Your cart is empty.</p>
+    </footer>
+  </body>
+</html>
